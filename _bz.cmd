@@ -1,6 +1,6 @@
 @echo off
 
-call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat" -arch=x86 -host_arch=amd64
+call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat" -arch=x86 -host_arch=amd64
 cd /d "%~dp0"
 rem *** Get the version
 for /f "tokens=3" %%i in ('findstr FileVersion examples\zadig.rc') do set "ver=%%i"
